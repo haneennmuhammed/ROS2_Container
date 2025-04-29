@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+  ros2_jazzy:
+    build: .
+    container_name: ros2_ws
+    image: ros2_ws
+    tty: true
+    stdin_open: true
+    volumes:
+      - ./spaceros2:/spaceros2
+
